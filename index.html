@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Diseño con Variables</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navegación para probar el :hover -->
+  <nav class="navbar">
+    <div class="logo">MiProducto</div>
+    <div class="enlaces">
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Tarjetas para probar box-shadow y transform -->
+  <main class="contenedor">
+    <h1 class="titulo-principal">Nuestros Planes</h1>
+    
+    <div class="grid-tarjetas">
+      <article class="card">
+        <h3>Plan Básico</h3>
+        <p>Perfecto para empezar.</p>
+        <button class="btn">Elegir Plan</button>
+      </article>
+
+      <article class="card">
+        <h3>Plan Pro</h3>
+        <p>Para profesionales serios.</p>
+        <button class="btn">Elegir Plan</button>
+      </article>
+    </div>
+
+    <section class="seccion-contacto">
+        <h2>Contáctanos</h2>
+        <p>Ejemplo de validación por navegador (sin JS).</p>
+
+        <form class="form-validado">
+
+            <div class="campo">
+                <label for="nombre">Nombre completo (min. 3 letras):</label>
+                <input type="text" id="nombre" name="nombre" required minlength="3" placeholder="Ejem. Miauricio Medina">
+            </div>
+
+             <div class="campo">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Ejem. hola@ejemplo.com" >
+            </div>
+            
+            <div class="campo">
+                <label for="telefono">Teléfono (Exactamente 9 dígitos):</label>
+                <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="Ejem. 989940984">
+            </div>
+            
+            <div class="campo">
+                <label for="motivo">Motivo de Contacto</label>
+                <select name="motivo" id="motivo" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="reclamos">Reclamos</option>
+                </select>
+            </div>
+
+            <div class="campo-checkbox">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones de privacidad</label>
+            </div>
+
+            <button type="submit" class="btn">Enviar Formulario</button>
+
+        </form>
+
+    </section>
+
+
+
+
+
+
+  </main>
+
+</body>
+</html>
